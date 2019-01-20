@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>vr / gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'content/css/style.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:900,400|Lato:300,400,700' rel='stylesheet'
+          type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{% static 'content/css/normalize.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'content/css/demo.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'content/css/dragdealer.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'content/css/component.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'content/css/menu.css' %}"/>
+    <link rel="shortcut icon" type="image/png" href="{% static 'content/favicon.ico' %}"/>
+</head>
+
+<body>
+
+{% block content %}
+{% endblock %}
+
+
+</body>
+
+    <script type="text/javascript" src="{% static 'content/js/jquery-2.1.4.js' %}"></script>
+    <script type="text/javascript" src="{% static 'content/js/modernizr.custom.js' %}"></script>
+    <script type="text/javascript" src="{% static 'content/js/three.js' %}"></script>
+    <script type="text/javascript" src="{% static 'content/js/classie.js' %}"></script>
+    <script type="text/javascript" src="{% static 'content/js/dragdealer.js' %}"></script>
+    <script type="text/javascript" src="{% static 'content/js/OrbitControls.js' %}"></script>
+    <script type="text/javascript" src="{% static 'content/js/GLTFLoader.js' %}"></script>
+    <script type="text/javascript" src="{% static 'content/js/dat.gui.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'content/js/camera-controls.js' %}"></script>
+    <script type="text/javascript" src="{% static 'content/js/Detector.js' %}"></script>
+    <script type="text/javascript" src="{% static 'content/js/Projector.js' %}"></script>
+    <script type="text/javascript" src="{% static 'content/js/enviroment.js' %}"></script>
+    <script type="text/javascript" src="{% static 'content/js/mainScript.js' %}"></script>
+
+</html>

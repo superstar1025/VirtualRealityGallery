@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>  Hi, {{ user }}!</h1>
+
+{% for gallery, images in galleries.items %}
+
+    <h3>
+        {{ gallery.title }}
+    </h3>
+
+    {% for image in images %}
+
+        <p>
+            {{ image.title }} <br>
+            <img src="{{ image.url }}" height="50px" width="50px">
+        </p>
+
+    {% endfor %}
+
+{% endfor %}
+
+</body>
+</html>

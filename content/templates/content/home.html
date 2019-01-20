@@ -1,0 +1,18 @@
+{% extends "content/base.html" %}
+{% block content %}
+
+    <h1>VR Gallery</h1>
+
+    <h3>
+        Available users:
+    </h3>
+
+    {% for user in users %}
+
+        <p>
+            &nbsp;&nbsp;<a href="http://{{ user }}.{{ domain }}">{{ user }}</a>
+        </p>
+
+    {% endfor %}
+
+{% endblock %}
